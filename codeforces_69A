@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+typedef vector<int> vi;
+
+int main(){
+	ios_base::sync_with_stdio(false); cin.tie(0);
+	int n; cin>>n;
+	vi v(3,0);
+	
+	while(n--){
+		int input;
+		
+		
+		for(int i = 0; i < 3; i++){
+			cin>>input;
+			v[i]+= input;
+			
+			
+		}
+
+		
+	}
+		if( v[0] == 0 && v[1] == 0 && v[2] == 0)
+		cout<<"YES";
+		else
+		cout<<"NO";
+		return 0;
+		
+		
+	
+	
+	
+}
