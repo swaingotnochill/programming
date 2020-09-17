@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+typedef vector<int> vi;
+typedef vector<char> vc;
+int main(){
+	ios_base::sync_with_stdio(false); cin.tie(0);
+		
+	string s;
+	getline(cin, s);
+	cin.ignore();
+	vc str(s.begin() , s.end());
+	set<char> sc;
+	vc:: iterator it;
+	for( auto i  = 0; i != str.size(); i++){
+	sc.insert(str[i]);
+	}
+	
+	if(( sc.size() % 2) == 0)
+	cout<< "CHAT WITH HER!";
+	else
+	cout<<"IGNORE HIM!";
+
+
+		return 0;
+		
+		
+	
+	
+	
+}
