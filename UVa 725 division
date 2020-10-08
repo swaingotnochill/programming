@@ -1,0 +1,29 @@
+/*
+***** $ author - iVioLe  *****
+*/
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+ios_base::sync_with_stdio(false);
+cin.tie(0);
+
+int n; cin>>n;
+assert( n >= 2 && n<= 79);
+for( int fghij = 1234; fghij <= 98765/n; fghij++){
+int abcde = fghij * n;
+int temp, used = (fghij < 10000) ;
+temp = abcde; while( temp){git
+    used |= 1 << (temp % 10); temp /= 10;
+}
+temp = fghij; while( temp){
+    used |= 1 << (temp % 10); temp/= 10;
+}
+if( used == (1<<10) - 1)
+printf("%5d / %5d = %d\n", abcde,fghij,n);
+
+}
+return 0;
+}
